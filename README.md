@@ -17,9 +17,14 @@ o reemplazalo directamente.
 
 4. Ejecuta sonar-report. Ejemplo:
 ```sh
-sonar-report   --sonarurl="http://192.168.0.29" \
+$ sonar-report   --sonarurl="http://192.168.0.29" \
 --sonarusername=admin \
 --sonarpassword=PIqsjzZVznF3 \
 --sonarcomponent=foro_inseguro \
 --project "Foro Inseguro" > sonar-report_sonar-report.html
+```
+
+5. Abrelo en el navegador para ver que realmente funciona
+```sh
+$ xdg-open sonar-report_sonar-report.html
 ```
